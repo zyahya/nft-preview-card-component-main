@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+  font-family: 'Outfit', sans-serif;
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(216, 50%, 16%);
+  padding: 40px;
+  border-radius: 20px;
+}
+.card > img {
+  border-radius: 20px;
+  margin-bottom: 40px;
+  width: 400px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card h1 {
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card p {
+  font-size: 25px;
+  font-weight: 300;
+  max-width: 400px;
+  line-height: 1.6;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 30px;
+}
+.card h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card .info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.card .info .price {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 20px;
+}
+.card .info .days-left {
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 20px;
+}
+.card .info .price img {
+  height: 20px;
+  margin-right: 10px;
+}
+.card .info .days-left img {
+  height: 20px;
+  margin-right: 10px;
+}
+.card .maker {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.card .maker span {
+  color: hsl(215, 51%, 70%);
+  margin-right: 3px;
+}
+.card .maker span.special {
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card .maker span.special:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card .maker img {
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
